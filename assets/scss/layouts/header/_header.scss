@@ -15,6 +15,21 @@
 //
 // -----------------------------------------------------------------------------
 
+.skip-to-main-link {
+    background: #fff;
+    color: $primary-color;
+    font-weight: 700;
+    left: 50%;
+    padding: 4px;
+    position: absolute;
+    transform: translate(-50%, -100%);
+    transition: transform 0.3s;
+
+    &:focus {
+        transform: translate(-50%, 0%);
+    }
+}
+
 .header {
     background-color: $header-bg;
     border-bottom: container("border");
@@ -44,7 +59,7 @@
     font-size: 0;   // 1
     margin: 0 remCalc($header-toggle-width); // 2
     text-align: center;
-    height: inherit;
+    height: $header-height;
 
     @include breakpoint("small") { // 4
         margin-left: remCalc($header-toggle-width * 1.5);
@@ -152,6 +167,7 @@
 
 .header-logo-image-container {
     position: relative;
+    width: 100%;
 }
 
 .header-logo-image-container:after {

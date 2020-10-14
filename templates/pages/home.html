@@ -11,35 +11,69 @@ blog:
     recent_posts:
         limit: {{theme_settings.homepage_blog_posts_count}}
 ---
-{{#partial "hero"}}
-    {{{region name="home_below_menu"}}}
-    {{#if carousel}}
-        {{> components/carousel arrows=theme_settings.homepage_show_carousel_arrows}}
-    {{/if}}
-    {{{region name="home_below_carousel"}}}
-{{/partial}}
 
 {{#partial "page"}}
-
-    {{#each shipping_messages}}
-        {{> components/common/alert-info message}}
-    {{/each}}
-
+ 
+<div class="container">
 <div class="main full">
-    {{#if products.featured}}
+
+   {{#if products.featured}}
         {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
     {{/if}}
-    {{{region name="home_below_featured_products"}}}
-
-    {{#if products.top_sellers}}
-        {{> components/products/top products=products.top_sellers columns=theme_settings.homepage_top_products_column_count}}
-    {{/if}}
-    {{{region name="home_below_top_products"}}}
-
-    {{#if products.new}}
-        {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
-    {{/if}}
-    {{{region name="home_below_new_products"}}}
 </div>
+</div>
+<div class="gray_bg"><div class="x-container">
+<div class="row">
+<div class="col-4 col-s-4">
+	<div class="round_box"><h3 class="heading_txt2">Pure&Clean</h3>
+    <img src="/content/img/PC-Home.jpg" class="img-fluid" />
+<div class="x-text"><p> Family-focused, Eco-Friendly products that are highly-effective: your loved ones deserve nothing less. For a child, a pet, or a dear friend – pure&clean. </p>
+
+<a href="/pure-clean/">Shop Now <i class="icon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-right"></use></svg></i></a></div></div>  
+</div>
+
+<div class="col-4 col-s-4">
+	<div class="round_box"><h3 class="heading_txt2">Medical</h3>
+    <img src="/content/img/pureclean-medical.jpg" class="img-fluid" />
+<div class="x-text"><p> Infection Control and Wound Care Technology that positively impact global healthcare – medically and monetarily. Change Your Health. </p>
+
+<a href="/hoci-wound-cleanser-8oz/">Shop Now<i class="icon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-right"></use></svg></i></a></div></div>  
+</div>
+
+<div class="col-4 col-s-4">
+	<div class="round_box"><h3 class="heading_txt2">Business</h3>
+    <img src="/content/img/business-home.jpg" class="img-fluid" />
+<div class="x-text"><p> Responsible business solutions reduce risk to the environment, employees, customers, and your organization! Smart, affordable, and effective. </p>
+
+<a href="/business/">Shop Now<i class="icon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-right"></use></svg></i></a></div></div>  
+</div>
+
+</div></div>
+
+<div class="x-container">
+<div class="row">
+<h1 class=" heading_txt1 text-center">What Others Are Saying About Pure&Clean </h1>
+
+<div class="col-6 col-s-6">
+  <img src="/content/img/dr-buckner-md.jpg"  class="img-fluid" />
+ <h2 class="heading_txt3 text-center"> Doctor Buckner, MD</h2>
+
+<p style="text-align: left;"><span style="color: #808080;"><em>” I have been in a very busy General Surgical practice for over 25 years and have deployed 4 times on combat deployments for the US Army. I have seen the worst wounds in the world and have been thrilled with the results I’ve seen with Pure&amp;Clean. There is no better wound care product on the planet. Pure&amp;Clean is safe, effective, nontoxic and very easy to use by both health care professionals and the general public. It is the only wound care product that I use on my patients, family or pets.”</em></span></p>
+   </div>
+   
+   <div class="col-6 col-s-6">
+  <img src="/content/img/IMG_0603.jpg"  class="img-fluid" />
+ <h2 class="heading_txt3 text-center"> Krystena W, Wife, Mother and Registered Nurse</h2>
+
+<p style="text-align: left;"><span style="color: #808080;"><em>“I use Pure&Clean’s amazing products daily. When my son was first born I used Pure&Clean First Aid on his diaper rash and it helped heal it by the next day. Pure&Clean First Aid is great for all of his skin and for mine too! I also use Pure&Clean Disinfectant to safely sanitize his toys. It’s a great product to have around the house and on the go.”</em></span></p>
+   </div>
+   </div></div>
+   
+ <div class="x-container"><div class="row" ><div class="btn_1" > <a href="/testimonials/" class=" text-center">Testimonial</a></div></div></div>
+   
+</div>
+<h1 class=" heading_txt1 text-center">Formulated for at work, at home and on the go!</h1>
+<div class="x-container"><div class="row" ><div class="btn_1" > <a  href="/pure-clean/" class=" text-center">Shop Now</a></div></div></div>
+<br /><br />
 {{/partial}}
 {{> layout/base}}

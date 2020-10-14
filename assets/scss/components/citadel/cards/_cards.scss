@@ -11,6 +11,19 @@
 //
 // -----------------------------------------------------------------------------
 
+.card {
+    &:focus-within {
+        .card-figcaption {
+            opacity: 1;
+        }
+    }
+
+    &.focus-within {
+        .card-figcaption {
+            opacity: 1;
+        }
+    }    
+}
 
 .card-figure {
     margin-top: $card-figure-marginTop;
@@ -63,6 +76,7 @@
     > a {
         color: $card-title-color;
         text-decoration: $card-title-textDecoration;
+        display: block;
 
         // scss-lint:disable NestingDepth
         &:hover {

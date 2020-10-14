@@ -1,14 +1,8 @@
-{{#if banners.top}}
 <div class="banners" data-banner-location="top">
-    {{#each (limit banners.top_metadata 1)}}
-    <div class="banner" data-event-type="promotion" data-entity-id="{{this.id}}" data-name="{{this.banner-name}}" data-position="{{this.location}}" data-banner-id="{{this.banner-name}}">
-        <div data-event-type="promotion-click">
-            {{{this.content}}}
-        </div>
+    <div class="banner">
+        <p><span style="font-family: 'arial black', 'avant garde'; font-size: small;">Free Shipping on Orders over $100 to US lower 48</span></p>
     </div>
-    {{/each}}
 </div>
-{{/if}}
 <header class="header" role="banner">
     <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
         <span class="mobileMenu-toggleIcon">Toggle menu</span>
@@ -24,8 +18,8 @@
             {{> components/common/store-logo}}
         </div>
     {{/if}}
+    {{{region name="header_bottom"}}}
     <div class="navPages-container" id="menu" data-menu>
         {{> components/common/navigation-menu}}
     </div>
 </header>
-{{{region name="header_bottom"}}}
