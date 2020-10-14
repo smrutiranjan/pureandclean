@@ -30,7 +30,7 @@
 
         {{{head.scripts}}}
 
-        {{~inject 'themeSettings' theme_settings}}
+        {{~inject 'showAdminBar' theme_settings.show-admin-bar}}
         {{~inject 'genericError' (lang 'common.generic_error')}}
         {{~inject 'maintenanceModeSettings' settings.maintenance}}
         {{~inject 'adminBarLanguage' (langJson 'admin')}}
@@ -39,6 +39,21 @@
         {{~inject 'cartId' cart_id}}
         {{~inject 'channelId' settings.channel_id}}
         {{~inject 'template' template}}
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "pure&clean™ Hypochlorous Acid",
+  "alternateName": "pureandclean",
+  "url": "https://pureandclean.us/",
+  "logo": "https://cdn11.bigcommerce.com/s-xgbanaif59/images/stencil/original/pureclean-logo-blue_1590079533__71156.original.png",
+  "sameAs": [
+    "https://twitter.com/Pure_and_Clean",
+    "https://www.facebook.com/pureandclean/",
+    "https://www.tumblr.com/blog/pureandcleanus"
+  ]
+}
+</script>
     </head>
     <body>
         <svg data-src="{{cdn 'img/icon-sprite.svg'}}" class="icons-svg-sprite"></svg>
