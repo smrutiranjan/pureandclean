@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ locale_name }}">
     <head>
-        <title>{{ head.title }}</title>
+        <title>{{#if head.title '==' '' }}Blog-pure&amp;clean™ Hypochlorous Acid{{else}}{{ head.title }}{{/if}}</title>
         {{{ resourceHints }}}
         {{{ head.meta_tags }}}
         {{{ head.config }}}
