@@ -1,0 +1,242 @@
+<style>
+    .round_box p{color:#000!important;min-height:150px;}
+    .productView-rating{display:none;}
+    .form-label--inlineSmall small{color:#50adee!important;}
+    .light_blue { background:#01afef; color:#fff;  padding: 10px;}
+.gray_bg { background:lightgray; color:#fff;}
+.table { color:#333; background: rgba(255,255,255,1); }
+.table-bordered  { border:1px solid #979797; border-collapse:collapse; }
+.table-bordered tr td { border:1px solid #979797; color: inherit; border-collapse:collapse; }
+.table tr th { background:#5f6668; color:#fff;}
+.text-white { color:#fff;}
+.p-2 { padding:10px;}
+
+ @media only screen and (max-width: 768px) {
+.light_blue { background:#01afef; color:#fff;  padding: 0;}
+.table tr td, .table tr th {
+    padding: .4em !important;
+    text-align: left;
+    font-size: 17px !important;
+}
+
+.table thead tr td, .table thead tr th {
+    font-size: 1rem !important;
+    font-weight: 700;
+    padding: 0.2em !important;
+}
+}
+ @media only screen and (min-width: 1600px) {
+#cart-preview-dropdown{
+    left:82.5%!important;  
+        top:49px!important;
+    }
+}
+body{
+   font-size:1.3rem!important;
+}
+    .productView-brand a,.card-body .card-text{
+color:#03aeef!important;
+}
+    .container1 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+    
+.socialLinks {list-style: none; line-height: auto;}
+.socialLinks .socialLinks-item{margin-bottom: 0;}
+footer {background-color: #00AEEF; color:#fff;}
+
+footer a { color:#fff; text-decoration:none;}
+footer a:hover{ color:#fff; text-decoration:underline;}
+
+.copyright { background:#333333; color:#fff;}
+.foot_heading { margin: 0 0 0.65em;color:#fff !important;
+font-size: 18px;
+line-height: 1.1;
+text-transform: uppercase;}
+.top_m {
+    padding: 5% 0 5.25%;
+    background-color: #00AEEF;
+}
+
+.x-container {
+    max-width: 1190px;
+    margin:0 auto;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 18px;
+}
+ /* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 46%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+        .page-content--centered{width:88%!important;}
+} 
+
+@media only screen and (max-width: 768px) {
+    .page-content--centered{width:100%!important;}
+[class*="col-"] {
+    width: 100%;
+}
+.addthis_toolbox a.at300b {
+    width: 32px !important ;
+}
+}
+
+.x-text { margin: 13px 12px 16px;}
+.x-text a  { color:#00aeef; font-size:16px; text-decoration:none; font-weight:600;}
+.x-text a:hover { color:#00aeef;}
+.round_box { padding: 0px ;
+border: 1px solid #474747;
+border-radius: 6px;
+background-color: white; }
+.round_box p { font-weight:300; letter-spacing: 0.5px;}
+.heading_txt2 { color:#00AEEF; font-size: 35px !important; text-align:center;}
+.heading_txt3 { color:#2c3e50; font-weight:600; }
+.heading_txt1 { color:#2c3e50; font-size:35px; font-weight:600;}
+.text-center { text-align:center;}
+.gray_bg { padding: 20px 0px;
+background-color: #f7f7f9;}
+
+.img-fluid { max-width:100%;}
+.btn_1 { text-align:center; margin: 0 auto;}
+.btn_1 a { border-radius: 0.35em;
+font-size: 1em;
+background-color: #00aeef;
+box-shadow: 0em 0.15em 0.65em 0em rgba(0,0,0,0.25);
+color:#fff;
+padding:11px 20px; text-decoration:none; font-size:14px; text-transform:uppercase; letter-spacing:1px;
+
+}
+.btn_1 a:hover { background:#0a8dbd;}
+.tabs-contents{border-left:1px solid #e5e5e5;border-right:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;padding:10px;
+}
+.banners {
+    background-color: #00aeef!important;
+    padding: .78571rem 0!important;
+    text-align: center!important;
+}
+</style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+      $(document).ready(function() {
+          
+           $('#shortdesc').hide();
+        $('.productView-product').append($('#shortdesc').html());
+        $('#faqtabdesc').hide();
+        $('#tab-faq').html($('#faqtabdesc').html());
+        $('#sdstabdesc').hide();
+        $('#tab-sds').html($('#sdstabdesc').html());
+          
+           var now = moment().tz('America/Chicago');        
+    var hr= now.format('hh');  var ampm=now.format('a'); 
+           console.log('time is'+ hr+ampm);
+    if( ampm == 'am') {
+        if(hr >= 8 && hr <= 12){
+            //console.log(hr+'am');
+            var newScript = document.createElement("script");
+            newScript.src = "//code.tidio.co/plviiefomyffdqhzhfhsl5jao0ak3my4.js";
+            document.body.appendChild(newScript);
+        }
+    } else {
+        if(hr == 12 ){
+           // console.log(hr+'pm');
+            var newScript = document.createElement("script");
+            newScript.src = "//code.tidio.co/plviiefomyffdqhzhfhsl5jao0ak3my4.js";
+            document.body.appendChild(newScript);
+        } else{
+            if( hr <= 6){
+                //console.log(hr+'pm');
+                var newScript = document.createElement("script");
+                newScript.src = "//code.tidio.co/plviiefomyffdqhzhfhsl5jao0ak3my4.js";
+                document.body.appendChild(newScript);
+            }
+        }
+    }
+        
+        $(".productView-options label").html(function(index, html) {
+        return html.replace('Ships to State:', "<span style='color:#50adee;'>Ships to State: </span>");
+        });
+       $(".productView-info-value").html(function(index, html) {
+        return html.replace('http://bit.ly/2TqCxtG', '<a href="http://bit.ly/2TqCxtG">http://bit.ly/2TqCxtG</a>');
+        });
+           $(".productView-info-value").html(function(index, html) {
+        return html.replace('http://bit.ly/3cfhC5k', '<a href="http://bit.ly/3cfhC5k">http://bit.ly/3cfhC5k</a>');
+        });
+           $(".productView-info-value").html(function(index, html) {
+        return html.replace('http://bit.ly/2VsPrtM', '<a href="http://bit.ly/2VsPrtM">http://bit.ly/2VsPrtM</a>');
+        });
+           $(".productView-price").html(function(index, html) {
+        return html.replace('temphttps://bit.ly/3cZTseF', '<strong>Temporarily Out-of-Stock - See ready to use product:  <a href="https://bit.ly/3cZTseF" style="color:blue">https://bit.ly/3cZTseF</a></strong>');
+        });
+          $(".productView-price").html(function(index, html) {
+        return html.replace('temphttps://bit.ly/2KGUMqR', '<strong>Temporarily Out-of-Stock - See ready to use product:  <a href="https://bit.ly/2KGUMqR" style="color:blue">https://bit.ly/2KGUMqR</a></strong>');
+        });
+          $(".productView-price").html(function(index, html) {
+        return html.replace('temphttps://bit.ly/3f4SkYT', '<strong>Temporarily Out-of-Stock - See ready to use product:  <a href="https://bit.ly/3f4SkYT" style="color:blue">https://bit.ly/3f4SkYT</a></strong>');
+        });
+          $(".productView-info-value").html(function(index, html) {
+        return html.replace('temphttps://bit.ly/3f4SkYT', '<strong><a href="https://bit.ly/3f4SkYT" style="color:blue">https://bit.ly/3f4SkYT</a></strong>');
+        });
+                    $(".productView-info-value").html(function(index, html) {
+        return html.replace('temphttps://bit.ly/3cZTseF', '<strong><a href="https://bit.ly/3cZTseF" style="color:blue">https://bit.ly/3cZTseF</a></strong>');
+        });
+          $(".productView-info-value").html(function(index, html) {
+        return html.replace('temphttps://bit.ly/2KGUMqR', '<strong><a href="https://bit.ly/2KGUMqR" style="color:blue">https://bit.ly/2KGUMqR</a></strong>');
+        });
+            $(".productView-price").html(function(index, html) {
+        return html.replace('FOREVERFOG', '<strong><a href="https://foreverfog.com/?ref=pureANDclean" style="color:blue" target="_blank">FOREVERFOG</a></strong>');
+        });
+          $(".productView-info-value").html(function(index, html) {
+        return html.replace('https://pncvision.com/wp-content/uploads/2020/05/PureClean-Hand-Cleanser-MSDS-2020-03-20.pdf', '<a href="https://pncvision.com/wp-content/uploads/2020/05/PureClean-Hand-Cleanser-MSDS-2020-03-20.pdf" class="button button--primary" target="_blank" style="line-height:1.5rem"><img src="https://cdn11.bigcommerce.com/s-xgbanaif59/product_images/uploaded_images/pdf.png">&nbsp;PureClean-Hand-Cleanser-MSDS-2020-03-20.pdf</a>');
+        });
+    });
+    </script>
